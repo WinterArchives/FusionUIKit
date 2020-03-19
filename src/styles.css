@@ -1,0 +1,100 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+
+@font-face {
+    font-family:abstract_moon;
+    src: url(src/assets/fonts/moonlight.woff)format('woff');
+    src: url(src/assets/fonts/moonlight.ttf)format('truetype');
+}
+
+::selection {color: #FFF;background-color:#7289DA;}
+::-moz-selection{color: #FFF;background-color:#7289DA;}
+
+*{border-color: #b7b8b9;}
+input:focus, textarea:focus, select:focus,button:focus{outline: none;}
+body{background-color:#FFFFFF;margin: 0; font-family: 'Open Sans', sans-serif; }
+span,p{font-family: 'Open Sans', sans-serif;}
+/* ------------------custom scrollbar style settings---------------- */
+mat-drawer-content::-webkit-scrollbar-track{border-radius:10px 3px 3px 10px;width: 6px;margin-top: 100px;margin-bottom:100px;background: #dee2e6;}
+mat-drawer-content::-webkit-scrollbar{width: 6px;background-color: transparent;}
+mat-drawer-content:hover::-webkit-scrollbar-thumb{border-radius:10px;background-color: #ff9c08}
+
+.locked::-webkit-scrollbar-track{border-radius:10px;width: 6px;margin-top: 100px;margin-bottom:100px;background: transparent;}
+.locked::-webkit-scrollbar{width: 2px;background-color: transparent;}
+.locked:hover::-webkit-scrollbar-thumb{border-radius:20px;background-color: #dcdcdc;-webkit-transition: background-color 2s;transition: background-color 2s;}
+
+/*------------------glbal style sheet [modified angular mat-design]---------------------*/
+/* ------------topbar----------- */
+button>.mat-button-toggle-label-content,.mat-stroked-button{padding:0!important;min-width: unset!important;}
+.mat-button{line-height: 25px!important;}
+.mat-button-toggle {display: flex;}/*??*/
+/* --->repositoryNav */
+.cdk-overlay-dark-backdrop{
+    /* filter: blur(0px); */
+    /* -webkit-filter: blur(0px); */
+    background: transparent;
+    /* opacity: 0.6!important; */
+}/*---removes background translucency hue---*/
+.mat-bottom-sheet-container{box-shadow: unset;    border: 1px solid;border-color: inherit;}
+/* --->privacy */
+label{margin:0px!important}
+.mat-slide-toggle{height: 30px!important;}
+.mat-snack-bar-container {
+    color:#23272A!important;
+    background: #fff!important;
+    box-shadow:unset!important;
+    border: 1px solid;
+    border-color: inherit;
+}
+.mat-slide-toggle-bar {
+    position: relative;width: 40px!important;
+    height: 30px!important;border-radius: 3px!important;box-shadow: inset 0px 0px 2px;
+}
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {background-color: #f47036}
+.mat-slide-toggle-thumb {
+    margin:0px!important;
+    height: 30px!important;
+    width: 30px!important;
+    border-radius: 3px!important;
+    background-color: #ffffff;
+    border: 1px solid #6c757d;
+    box-shadow: none!important;
+}
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #ad5800 #b95e00 #cf6a00;
+}
+.mat-slide-toggle-thumb-container {
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 30px!important;
+    width: 30px!important;
+    top:0px!important
+}
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb-container {transform: translate3d(10px,0,0)!important;}
+
+/* ---> profile */
+.-head {margin-bottom: 0px!important;font-size: 18px;font-weight: bold;}
+mat-dialog-container{border: 1px solid; border-color: #dcdcdc!important;box-shadow: none!important;box-shadow: 0 0 3px black;}
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background-color: #ff9c08;
+}
+/*---> accordion */
+span.mat-expansion-indicator{display: none!important;}
+.mat-expansion-panel-body {padding: 5px 0!important;}
+
+/* ---> loading */
+.mat-progress-bar-fill::after {background-color: #000000!important}
+/* ---> statistics */
+.mat-drawer-content{display: flex!important  ;flex-direction:row;}
+/* ---> Issue */
+.header>.mat-button-toggle-group{height: 30px;}
+.mat-button-toggle-label-content {line-height: 0px!important;}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

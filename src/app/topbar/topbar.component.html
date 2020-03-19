@@ -1,0 +1,20 @@
+<div class="-topbar" role="banner">
+    <div class="col-auto repo-switcher -space-start -center">
+      <app-navigator class=""></app-navigator>
+      <button mat-stroked-button (click)="openBottomSheet()" matTooltip="Switch your repositories with ease, get in jump over your destination!">
+        <div class="-stack-icon">
+          <img src="assets/icons/stack.svg" alt="">
+        </div>
+        <span>{{RepoName}}</span>
+      </button>
+      <div class="privacy -flex -center">
+        <app-privacy matTooltip="Re-configure your privacy settings, make sure you're selected the correct repository..!"></app-privacy>
+      </div>
+    </div>
+    <div class="col -space-end -center profile">
+      <app-search class=".search-button"></app-search>
+      <button mat-stroked-button (click)="openDialog()">
+        <img  src="assets\icons\Contacts_Icon.svg" alt="">
+      </button>
+    </div>
+</div>

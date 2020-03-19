@@ -1,0 +1,5 @@
+.canvas{display: flex;justify-content: center;align-items: center;height: 100vh;width: 100vw;}
+.mat-card{box-shadow: unset!important;}
+.loadinBar{margin: 50px 100px;}
+.mat-progress-bar {display: block;height: 1px!important;}
+        

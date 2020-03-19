@@ -1,0 +1,18 @@
+/* ----- custom style ----- */
+p {margin-top: 0;margin-bottom: 0;font-size: 12px;}
+.-acrd-bar{align-items: center;display: flex;height: 100%;}
+/* .sub-options{padding: 5px 24px;border-left: 2px solid #ff8316;margin-bottom: 2px;color: #24292e;} */
+.sub-options{
+    padding: 5px 24px;
+    border-left: 2px solid #b5d43b;
+    margin-bottom: 2px;
+    color: #b5d43b;
+}
+.sub-options:hover{border-left: 2px solid #434738;color: #434738;}
+/* -----------angular mat design change-------------- */
+.mat-expansion-panel a:hover{text-decoration: none!important;}
+.mat-accordion{border: 1px solid #c5c5c5;border-radius: 4px;width: 150px;margin-left:-6px;}
+.mat-expansion-panel-spacing {margin:0;}
+.mat-expansion-panel-header-description, .mat-expansion-panel-header-title{margin:0px;display: block;font-size: 12px;}
+.mat-expansion-panel:not([class*=mat-elevation-z]) {box-shadow:0px 0px 0px;}
+.mat-expansion-panel-header{height: 40px;}

@@ -1,0 +1,13 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" xml:space="preserve" data-animoptions="{'duration':'1.5', 'repeat':'0', 'repeatDelay':'0.7'}" preserveAspectRatio="xMinYMin meet" style="left: 0.5px; top: 0px;"><g class="lievo-setrotation"><g class="lievo-setsharp"><g class="lievo-setflip"><g class="lievo-main">
+		<g class="lievo-common">
+			<path fill="#6c7a89" stroke="#6c7a89" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,47V29h10v18" style="transform: matrix(1, 0, 0, 1, 0, 0); stroke: rgb(108, 122, 137); fill: rgb(108, 122, 137); transform-origin: 0px 0px 0px;" data-svg-origin="14 47"></path>
+			
+			<path fill="#6c7a89" stroke="#6c7a89" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M25,47V21h10v26" style="transform: matrix(1, 0, 0, 1, 0, 0); stroke: rgb(108, 122, 137); fill: rgb(108, 122, 137); transform-origin: 0px 0px 0px;" data-svg-origin="30 47"></path>
+			
+			<path class="lievo-altstroke" fill="#6c7a89" stroke="#6c7a89" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M41,47V13h10v34" style="transform: matrix(1, 0, 0, 1, 0, 0); stroke: rgb(108, 122, 137); fill: rgb(108, 122, 137); transform-origin: 0px 0px 0px;" data-svg-origin="46 47"></path>
+			
+			<line fill="none" stroke="#6c7a89" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="7" y1="47" x2="53" y2="47" style="stroke-dashoffset: 1e-05; stroke-dasharray: none; stroke: rgb(108, 122, 137);"></line>
+		</g>
+	<rect x="-19" y="-19" width="4" height="4" fill="none" stroke="#6c7a89" style="stroke-width: 2; stroke-linecap: butt; stroke-linejoin: round; opacity: 0;" class="lievo-checkshift lievo-donotdraw lievo-nohoverstroke lievo-nohovercolor"></rect></g></g></g></g>
+	
+<desc>LivIcons Evolution</desc><defs></defs></svg>

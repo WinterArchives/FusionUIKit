@@ -1,0 +1,138 @@
+<button class="toogle-sideNav" type="button" mat-stroked-button (click)="drawer.toggle()"><div class="shade"></div></button>
+<mat-drawer-container class="drawer-container -width-full" autosize>
+    <mat-drawer #drawer class="drawer-sidenav -acrd-bar -center" mode="over">
+      <!-- accordionNavbar -->
+        <app-crawler></app-crawler>
+    </mat-drawer>
+    <!-- canvas -->        
+    <div class="canvas-tab -flex-col">
+        
+    </div>
+    <div class="drawer-sidenav-content">
+        <!-- <button class="toogle-sideNav" type="button" mat-stroked-button (click)="drawer.toggle()"><div class="shade"></div></button> -->
+        <div class="col-md-auto issue-draglist locked">
+            <!-- mat card -->
+            <app-issues></app-issues>
+            <app-issue-comments></app-issue-comments>
+            <!-- <app-issues></app-issues>
+            <app-issues></app-issues> -->
+        </div>
+        <div class="col-md-2 container-accessables">
+            <div class="container-issue locked">
+                    <mat-card class="p_5">
+                        <div class="assignes">
+                            <mat-card-subtitle>Assignes</mat-card-subtitle>
+                        </div>
+                    </mat-card>
+                    <mat-card class="p_5">
+                        <div class="labels">
+                            <mat-card-subtitle>labels</mat-card-subtitle>
+                            <mat-chip-list aria-label="Fish selection">
+                                <mat-chip>One fish</mat-chip>
+                                <mat-chip>Two fish</mat-chip>
+                                <mat-chip color="primary" selected>Primary fish</mat-chip>
+                                <mat-chip color="accent" selected>Accent fish</mat-chip>
+                                <mat-chip>One fish</mat-chip>
+                                <mat-chip>Two fish</mat-chip>
+                                <mat-chip color="primary" selected>Primary fish</mat-chip>
+                                <mat-chip color="accent" selected>Accent fish</mat-chip><mat-chip>One fish</mat-chip>
+                                <mat-chip>Two fish</mat-chip>
+                                <mat-chip color="primary" selected>Primary fish</mat-chip>
+                                <mat-chip color="accent" selected>Accent fish</mat-chip><mat-chip>One fish</mat-chip>
+                                <mat-chip>Two fish</mat-chip>
+                                <mat-chip color="primary" selected>Primary fish</mat-chip>
+                                <mat-chip color="accent" selected>Accent fish</mat-chip>
+                            </mat-chip-list>
+                        </div>
+                    </mat-card>
+                    <mat-card class="p_5">
+                        <div class="milestones">
+                            <mat-card-subtitle>milestones</mat-card-subtitle>
+                        </div>
+                    </mat-card>
+                    <mat-card class="p_5">
+                        <div class="projects">
+                            <mat-card-subtitle>Projects</mat-card-subtitle>
+                        </div>
+                    </mat-card>
+                    <mat-card class="p_5">
+                        <div class="participants">
+                            <mat-card-subtitle>Participants</mat-card-subtitle>
+                        </div>
+                    </mat-card>
+            </div>
+            <div class="container-subscribe">
+                <mat-card class="container-subscribe-card">
+                    <button mat-stroked-button>{{sub}}</button>
+                    <mat-card-subtitle>{{sub_status}}</mat-card-subtitle>
+                </mat-card>
+            </div>
+        </div>
+        <div class="col issue-tracker locked">
+            <nav class="-acrd-bar -space-around -center">
+            <mat-accordion>
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                    Self aware panel
+                    </mat-panel-title>
+                    <mat-panel-description>
+                    Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                    </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p>I'm visible because I am open</p>
+                </mat-expansion-panel>
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                    Self aware panel
+                    </mat-panel-title>
+                    <mat-panel-description>
+                    Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>I'm visible because I am open</p>
+                </mat-expansion-panel>
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                    Self aware panel
+                    </mat-panel-title>
+                    <mat-panel-description>
+                    Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>I'm visible because I am open</p>
+                </mat-expansion-panel>
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                    Self aware panel
+                    </mat-panel-title>
+                    <mat-panel-description>
+                    Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>I'm visible because I am open</p>
+                </mat-expansion-panel>
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                    Self aware panel
+                    </mat-panel-title>
+                    <mat-panel-description>
+                    Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+                <p>I'm visible because I am open</p>
+                </mat-expansion-panel>
+            </mat-accordion>
+            </nav>
+        </div>
+    </div>
+</mat-drawer-container>

@@ -1,0 +1,52 @@
+<mat-tab-group mat-align-tabs="center" animationDuration="0ms">
+        <mat-tab label="singIn">
+            <mat-card>
+                <div class="container"><img src="assets\icons\beerJar.svg" alt=""></div>
+                <mat-card-title class="-space-around">Access type for repositories</mat-card-title>
+                <mat-card-content>
+                    <mat-card-subtitle>give access only to public repositories or live on edge and grant access for full fledge public-private.</mat-card-subtitle>
+                    <mat-card-subtitle class="-li">Full control of private repositories</mat-card-subtitle>
+                    <mat-card-subtitle class="-li">Access user email addresses (read-only)</mat-card-subtitle>
+                    <mat-card-actions
+                    matTooltip="By using our website and agreeing to these terms of use, you consent to our use of limited GitHub access to your repositories."
+                    class="-space-around">
+                        <mat-button-toggle-group name="accessType" aria-label="Font Style">
+                            <mat-button-toggle value="private"><span>private</span></mat-button-toggle>
+                            <mat-button-toggle [disabled]="isDisabled" value="git_understand">
+                                <div class="octocat"><img src="assets\icons\GitHub\github_octo.svg" alt=""></div>
+                            </mat-button-toggle>
+                            <mat-button-toggle value="public"><span>public</span></mat-button-toggle>
+                        </mat-button-toggle-group>
+                    </mat-card-actions>
+                </mat-card-content>
+            </mat-card>
+        </mat-tab>
+        <mat-tab label="signUp">
+                <mat-card>
+                        <img mat-card-image src="assets\icons\GitHub\hero_circuit_bg.svg">
+                        <mat-card-title class="-space-around">Getting in with GitHub</mat-card-title>
+                        <mat-card-content>
+                            <mat-card-subtitle class="-head">Read & write:</mat-card-subtitle>
+                            <mat-card-subtitle>You'll be able to manage your projects right from hook.</mat-card-subtitle>
+                            <mat-card-subtitle class="-head">No access to sensitive information:</mat-card-subtitle>
+                            <mat-card-subtitle>hook connects to your account using OAuth2. GitHub will return a token that will be stored locally and will never leave your device.</mat-card-subtitle>
+                            <mat-card-subtitle class="-head">Token access:</mat-card-subtitle>
+                            <mat-card-subtitle>The token can be revoked at any time from your GitHub settings.</mat-card-subtitle>
+                            <mat-card-actions class="-space-around">
+                                <button mat-stroked-button class="-signup" 
+                                matTooltip="By using our website and agreeing to these terms of use, you consent to our use of limited GitHub access to your repositories."
+                                mat-button>
+                                    <div class="octocat">
+                                        <img src="assets\icons\GitHub\github_octo.svg" alt="">
+                                        <div class="placeholder">
+                                            <span class="-subtle">Sign up with</span>
+                                            <span class="-p-subtle">GitHub</span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </mat-card-actions>
+                        </mat-card-content>
+                </mat-card>
+        </mat-tab>
+</mat-tab-group>
+    

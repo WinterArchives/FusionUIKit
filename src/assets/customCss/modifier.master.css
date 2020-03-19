@@ -1,0 +1,35 @@
+/* ------------------custom css modifier---------------- */
+.-flex{display: flex;}
+.-flex-col{display: flex;flex-direction: column;}
+.-width-full{width: 100%;}
+.-height-full{height: 100%;}
+.-space-around{display: flex!important;justify-content: space-around;}
+.-center{align-items: center;}
+.-space-just-btw{display: flex;justify-content:space-between;}
+.-space-end{display: flex;justify-content: flex-end;}
+.-space-start{display: flex;justify-content:flex-start;}
+.-space{display: flex;align-items: center;}
+.-nopad{padding: 0 !important;margin-left: 5px !important;margin-right: 5px!important;}
+
+.p_5{padding: 5px!important;}
+.mat-drawer-backdrop.mat-drawer-shown{background:transparent!important;}
+
+.mat-chip{font-weight: 400!important;}
+.mat-chip.mat-standard-chip {
+    background-color: #f3f3f3!important;
+}
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-accent {
+    background-color: #434738!important;
+    color: #f3f3f3!important;
+    /* font-weight: 400; */
+}
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
+    background-color: #B5D43B!important;
+}
+
+.mat-chip-list-wrapper .mat-standard-chip, .mat-chip-list-wrapper input.mat-input-element {
+    margin: 2px!important;
+    padding: 0px 6px!important;
+    border-radius: 4px!important;
+}
+

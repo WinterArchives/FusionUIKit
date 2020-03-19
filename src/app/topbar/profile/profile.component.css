@@ -1,0 +1,26 @@
+/* span{padding-left: 10px;font-size: 15px;margin-top:-2px;text-transform: uppercase;} */
+h5,h6,p,span{text-align: center;color:#23272A;}
+span{margin:0px 10px;color: #23272A;}
+
+/* stylesheet basic */
+div>img{display:block;margin:10px}
+
+.container{background: #eaeaea;height: 130px;display: flex;justify-content: center;align-items: center;}
+.-li{text-align: left;color: #FF6C37;}
+.octocat{height: 50px;display: flex;justify-content: space-between;}
+.-signup{width: 200px;height:50px;background-color:whitesmoke}
+
+.placeholder{display: flex;flex-direction: column;padding: 0 20px;}
+.-subtle{display: block;font-size: 12px;height: 22px;font-weight: 400;letter-spacing: 0.01em;}
+.-p-subtle{display: block;height: 28px;}
+
+
+
+/* angular material kit modification*/
+mat-card-subtitle{text-align: center;}
+
+.mat-card-title {display: block;margin-bottom: 4px;}
+.mat-card-subtitle{font-size: 12px;}
+.mat-card-subtitle:not(:first-child), .mat-card-title:not(:first-child) {margin-top: 0px;}
+.mat-card-image{height: 100px;}
+.mat-button-toggle{width: 80px;height: 50px;}

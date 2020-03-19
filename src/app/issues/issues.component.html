@@ -1,0 +1,76 @@
+<!-- search for disabled and enabled button -->
+<mat-card class="-flex-col">
+    <div class="title-container">
+        <mat-card-title-group>
+                <mat-card-title>
+                    <span>Editor # sometimes double click into word is not fully selecting it</span> 
+                </mat-card-title>
+                <mat-card-subtitle>
+                        <span>on Oct 23 2019 at 05:47pm</span> 
+                </mat-card-subtitle>
+        </mat-card-title-group>
+    </div>
+    <div class="header">
+        <button mat-stroked-button>
+            <div class="-image-avatar">
+                <img src="assets/icons/profileicon.svg" alt="">
+                <span>creator</span>
+            </div>
+        </button>
+        <mat-button-toggle-group name="descComSwitch" aria-label="Font Style">
+            <mat-button-toggle class="header-group-btn" value="descriptions">descriptions</mat-button-toggle>
+            <mat-button-toggle class="header-group-btn" value="comments">comments</mat-button-toggle>
+        </mat-button-toggle-group>
+        <mat-button-toggle-group class="btn-state" name="status" aria-label="Font Style">
+            <mat-button-toggle class="header-status-indc" value="stat_viewImg" disabled="true">
+                <img src="assets/icons/runtime/state-closed.svg" alt="">
+            </mat-button-toggle>
+            <mat-button-toggle class="header-status-btn" value="stat_mod">{{state}}</mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
+    <div class="update">
+        <div class="id-creator">
+            <mat-card-subtitle>
+                <span>maziac</span> 
+            </mat-card-subtitle>
+        </div>
+        <div class="id-datetime">
+            <mat-card-subtitle>
+                <span>tomsaunders-code commented 17 minutes ago</span> 
+            </mat-card-subtitle> 
+        </div> 
+    </div>
+    <!-- content -->
+    <div class="text-snip">
+        <p>
+            I'm developing a View extensions with the TreeDataProvider. Users are able to right click on an item in the tree, opening the showOpenDialog window. There they can pick an svg or png image file to replace the current icon used for the selected Tree Item. Once chosen the new image overwrites the current icon file with the same name in the same path (same URI). Then the TreeDataProvider is refreshed using the onDidChangeTreeData event. On refresh the new icon does not load. Icons with different URI's will reload. The new icon only appears after a window reload. Am I missing a call in the API to force reload the URI, otherwise this would seem like a bug.
+        </p>           
+        <pre>
+            Version: 1.41.0-insider (user setup)
+            Commit: a747d26
+            Date: 2019-11-23T11:09:42.834Z
+            Electron: 6.1.5
+            Chrome: 76.0.3809.146
+            Node.js: 12.4.0
+            V8: 7.6.303.31-electron.0
+            OS: Windows_NT x64 10.0.19025
+            
+            Steps to Reproduce:
+            
+            Using the TreeDataProvider API load a custom View into Explorer with icons
+            Change out one of the icons on disk with another icon of the same name and path.
+            Refresh the TreeDataProvider without a window reload.
+            Note the icon with same URI will not change.
+            Does this issue occur when all extensions are disabled?            
+            :This issue relates to an extension feature, therefore could not be tested without extensions.
+        </pre>
+        <p>
+            I'm developing a View extensions with the TreeDataProvider. Users are able to right click on an item in the tree, opening the showOpenDialog window. There they can pick an svg or png image file to replace the current icon used for the selected Tree Item. Once chosen the new image overwrites the current icon file with the same name in the same path (same URI). Then the TreeDataProvider is refreshed using the onDidChangeTreeData event. On refresh the new icon does not load. Icons with different URI's will reload. The new icon only appears after a window reload. Am I missing a call in the API to force reload the URI, otherwise this would seem like a bug.
+        </p> 
+    </div>
+    <button mat-stroked-button class="-emote">
+        <div class="-image-emote">
+            <img src="assets/icons/emote.svg" alt="">
+        </div>
+    </button>
+</mat-card>

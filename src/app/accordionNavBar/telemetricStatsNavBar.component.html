@@ -1,0 +1,29 @@
+<nav class="-acrd-bar -space-around -center">
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>Projects</mat-panel-title>
+          </mat-expansion-panel-header>
+          <a href="#"><div class="sub-options"><p>open</p></div></a>
+          <a href="#"><div class="sub-options"><p>closed</p></div></a>
+        </mat-expansion-panel>
+        <mat-expansion-panel mat-expansion-indicator='false' (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>Codes</mat-panel-title>
+          </mat-expansion-panel-header>
+          <a href="#"><div class="sub-options"><p>Commits</p></div></a>
+          <a href="#"><div class="sub-options"><p>Branch</p></div></a>
+          <a href="#"><div class="sub-options"><p>Packages</p></div></a>
+          <a href="#"><div class="sub-options"><p>Release</p></div></a>
+          <a href="#"><div class="sub-options"><p>Contributors</p></div></a>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>Issues Tracker</mat-panel-title><!-- <mat-panel-description>Currently I am {{panelOpenState ? 'open' : 'closed'}}</mat-panel-description> -->
+          </mat-expansion-panel-header>
+          <a href="#"><div class="sub-options"><p>Issues</p></div></a>
+          <a href="#"><div class="sub-options"><p>labels</p></div></a>
+          <a href="#"><div class="sub-options"><p>Milestones</p></div></a>
+        </mat-expansion-panel>
+    </mat-accordion>
+</nav>
