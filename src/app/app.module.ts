@@ -58,6 +58,10 @@ import { SearchComponent, GitFinderComponent } from './search/search.component';
 import { IssueCommentsComponent } from './issues/issue-comments/issue-comments.component';
 // import { FactScrollerComponent } from './fact-scroller/fact-scroller.component';
 
+import { LMarkdownEditorModule } from 'ngx-markdown-editor';  
+import 'brace';
+import 'brace/mode/markdown';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -118,6 +122,9 @@ import { IssueCommentsComponent } from './issues/issue-comments/issue-comments.c
     MatTreeModule,
     PortalModule,
     ScrollingModule,
+    
+    FormsModule,
+    LMarkdownEditorModule
   ],
   providers: [],
   bootstrap: [AppComponent, LoadscreenComponent],

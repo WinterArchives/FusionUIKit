@@ -5,4 +5,7 @@ mat-card {
     min-height: 150px;
     border: 1px solid #dee2e6;
     box-shadow: unset!important;
+    padding: 8px 2px 0 2px;
 }
+h6{padding-left: 10px;    color: #434738;
+    font-weight: 400;}

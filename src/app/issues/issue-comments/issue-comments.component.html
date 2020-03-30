@@ -1,8 +1,17 @@
 <mat-card>
     <div class="-flex">
-      nf nydnyd  
+      <h6> + Comment</h6>  
     </div>
     <mat-card-content>
-        bhbfnhyfjmuymkhgmjfghyf
+      <md-editor name="Content" 
+      [upload]="doUpload" 
+      [preRender]="preRenderFunc" 
+      [(ngModel)]="content"
+      [height]="'400px'"
+      [mode]="mode" 
+      [options]="options" 
+      required 
+      maxlength="500">
+      </md-editor>
     </mat-card-content>
 </mat-card>

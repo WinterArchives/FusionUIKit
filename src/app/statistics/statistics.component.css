@@ -41,7 +41,7 @@ app-issues > mat-card:not(:last-child){display:block;margin-bottom: 5px!importan
 .locked{
     height: 600px;
     position: relative;
-    z-index: 1;
+    z-index: auto;
     display: block;
     height: 100%;
     overflow: auto;
@@ -70,7 +70,9 @@ app-issues > mat-card:not(:last-child){display:block;margin-bottom: 5px!importan
 .container-subscriber{height: 20vh;}
 .container-subscribe-card>button{
     width: 100%;
-    background: #ff9437;
+    /* background: #ff9437;
+    color: #23272A; */
+    background: #f3f3f3;
     color: #23272A;
 }
 .container-subscribe>mat-card{min-height: 100px;}

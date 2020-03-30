@@ -33,3 +33,39 @@
     border-radius: 4px!important;
 }
 
+.md-editor-container .md-layout .editor-container {
+    -webkit-box-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: flex;
+    height: calc(100% - 100px);
+    background-color: white;
+}
+/* .ace_scrollbar .ace_scrollbar-v{
+    display:none!important;
+} */
+ .md-editor-container {
+    position: relative;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.btn-group>.btn-group>.btn, .btn-group>.btn {
+    border: 1px solid #a1a1a1;
+    margin-right: 4px;
+    border-radius: 4px;
+}
+.md-editor-container .md-layout .tool-bar {
+    background-color: #ffffff!important;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.ace-tm .ace_marker-layer .ace_active-line {
+    background: rgb(255, 255, 255)!important;
+}
+
+.md-editor-container .md-layout .md-footer .length-view {
+    background: white!important;
+}
+.ace-tm .ace_gutter{
+    background-color: white!important;
+}

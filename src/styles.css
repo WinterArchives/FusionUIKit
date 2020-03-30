@@ -25,8 +25,8 @@ mat-drawer-content::-webkit-scrollbar{width: 6px;background-color: transparent;}
 mat-drawer-content:hover::-webkit-scrollbar-thumb{border-radius:10px;background-color: #ff9c08}
 
 .locked::-webkit-scrollbar-track{border-radius:10px;width: 6px;margin-top: 100px;margin-bottom:100px;background: transparent;}
-.locked::-webkit-scrollbar{width: 2px;background-color: transparent;}
-.locked:hover::-webkit-scrollbar-thumb{border-radius:20px;background-color: #dcdcdc;-webkit-transition: background-color 2s;transition: background-color 2s;}
+.locked::-webkit-scrollbar{width: 8px;background-color: transparent;}
+.locked:hover::-webkit-scrollbar-thumb{border-radius:0;background-color: #dcdcdc;-webkit-transition: background-color 2s;transition: background-color 2s;}
 
 /*------------------glbal style sheet [modified angular mat-design]---------------------*/
 /* ------------topbar----------- */
@@ -96,5 +96,8 @@ span.mat-expansion-indicator{display: none!important;}
 /* ---> Issue */
 .header>.mat-button-toggle-group{height: 30px;}
 .mat-button-toggle-label-content {line-height: 0px!important;}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
